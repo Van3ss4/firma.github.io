@@ -71,7 +71,10 @@ nav img{
 
 .eyecatcher img{
     max-height: 50vh;
-    margin: 3%;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .text-box{
@@ -98,8 +101,11 @@ nav .fa{
 
 .row{
     margin-top: 5%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
+    align-items: top;
+    margin: auto;
 }
 
 h3{
@@ -121,12 +127,18 @@ h3{
 
 .steps-col{
     flex-basis: 31%;
-    background: white;
+    background: green;
     border-radius: 10px;
     margin-bottom: 10px;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
+}
+
+.steps-col img{
+    width: 100%;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 .steps-col p{
@@ -135,15 +147,6 @@ h3{
 
 .steps-col:hover{
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
-}
-
-.vorteile{
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    text-align: center;
-    padding-top: 100px;
 }
 
 .description{
@@ -156,11 +159,24 @@ h3{
     text-indent: 5px;
 }
 
+.vorteile{
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
 .vorteile img{
     display: block;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
-    width: 15%;
+    width: 20%;
+    height: auto;
+}
+
+.vorteile p{
+    overflow: hidden;
 }
 
 .fusszeile{
@@ -170,7 +186,7 @@ h3{
     margin-top: 100px;
     padding: 30px;
 }
-.
+
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
@@ -213,12 +229,16 @@ h3{
         padding: 25px;
     }
 
-    .row{
-        flex-direction: column;
-    }
-
     .steps-col{
         margin: 8% 8%;
+    }
+
+    .description h3{
+        text-align: center;
+    }
+
+    .row{
+        flex-direction: column;
     }
 
 }

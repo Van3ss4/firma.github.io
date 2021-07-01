@@ -1,9 +1,22 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans', sans-serif;;
+    font-family: 'Noto Sans', sans-serif;
+
 }
 
+h1{
+    font-size: 34px !important;
+}
+
+h2{
+    font-size: 24px !important;
+}
+
+.figure:hover{
+    transform: scale(1.02);
+    transition: 1s;
+}
 
 .header{
     height: 100px;
@@ -87,5 +100,16 @@ nav .fa{
 
 .col-lg-4{
     height: max-content;
-    vertical-align: top;
+}
+
+@media(max-width: 1000px){
+    .row.doppelbild{
+        flex-direction: column;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+
 }

@@ -144,6 +144,10 @@ nav .fa{
         flex-direction: column;
     }
 
+    .row.album{
+        width: 90%;
+    }
+
 
 
 }

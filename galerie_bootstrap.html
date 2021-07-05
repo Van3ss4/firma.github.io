@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style_bootstrap.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&family=Zen+Loop&display=swap" rel="stylesheet"> 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
@@ -17,18 +17,115 @@
     <body>
 
        <!-- Header -->
-       <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <img src="images/Logo.png" width="50" height="40">
-            <span class="fs-4">Architektur 3D-Druck</span>
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="images/Logo.png" width="50" height="40">
+                <span class="fs-4">Architektur 3D-Druck</span>
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index_bootstrap.html" class="nav-link link-dark">HOME</a></li>
+                <li class="nav-item"><a href="galerie_bootstrap.html" class="nav-link link-secondary" aria-current="page">GALERIE</a></li>
+                <li class="nav-item"><a href="kontakt_bootstrap.html" class="nav-link link-dark">KONTAKT</a></li>
+            </ul>
+        </header>
 
-        </a>
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="index_bootstrap.html" class="nav-link link-dark">HOME</a></li>
-            <li class="nav-item"><a href="galerie_bootstrap.html" class="nav-link link-secondary" aria-current="page">GALERIE</a></li>
-            <li class="nav-item"><a href="kontakt_bootstrap.html" class="nav-link link-dark">KONTAKT</a></li>
-        </ul>
-    </header>
+
+        <!-- Hansehaus 45-130 -->
+        <div class="container">
+            <div class="col">
+                <div class="row align-items-center">
+                    <div class="col-lg-6"><img src="images/Haus_vorderansicht.png" style="width: 100%;"></div>
+                    <div class="col-lg-6">
+                        <div class="container">
+                            <h1 style="margin: 20px;">
+                                Einfamilienhaus
+                            </h1>
+                            <ul>
+                                <li>Das Dach und die einzelnen Stockwerke sind abnehmbar</li>
+                                <li>Standard Fassaden- und Dachstrukur</li>
+                                <li>Böden im Innenraum imitiert</li>
+                                <li>Maßstab 1:50</li>
+                                <li>Modellierung erfolgte anhand der Grundrisspläne</li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-xl-6"><img src="images/Haus_offen.png" style="width: 100%;"></div>
+                    <div class="col-xl-6"><img src="images/Haus_rueckansicht.png" style="width: 100%;"></div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6"><img src="images/haus_nah1.png" style="width: 100%;"></div>
+                    <div class="col-lg-6"><img src="images/haus_nah2.png" style="width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trennlinie -->
+        <div class="container" style="margin-top: 70px; margin-bottom: 70px;">
+            <hr>
+        </div>
+
+        <!-- Einfamilienhaus -->
+        <div class="container">
+            <div class="col">
+                <div class="row align-items-center">
+                    <div class="col-lg-6"><img src="images/Hnasehaus2.png" style="width: 100%;"></div>
+                    <div class="col-lg-6">
+                        <div class="container">
+                            <h1 style="margin: 20px;">
+                                Hansehaus 45-130
+                            </h1>
+                            <ul>
+                                <li>Das Dach und die einzelnen Stockwerke sind abnehmbar</li>
+                                <li>Dachsteine imitiert</li>
+                                <li>schwarze Fensterrähmen und Eingangstür</li>
+                                <li>Maßstab 1:70</li>
+                                <li>Modellierung erfolgte anhand der Grundrisspläne</li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-xl-6"><img src="images/Hnasehaus1.png" style="width: 100%;"></div>
+                    <div class="col-xl-6"><img src="images/Hansehaus3.png" style="width: 100%;"></div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6"><img src="images/Hansehaus_EG.png" style="width: 100%;"></div>
+                    <div class="col-lg-6"><img src="images/Hansehaus_OG.png" style="width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trennlinie -->
+        <div class="container" style="margin-top: 70px; margin-bottom: 70px;">
+            <hr>
+        </div>
+        
+        <!-- Baden-baden -->
+        <div class="container justify-content-center">
+                <h1 style="text-align: center; margin: 50px;">Städtebauliches Modell</h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <ul>
+                            <li>ca. 700 mm x 400 mm Grundfläche</li>
+                            <li>oberstes Stockwerk des neuen Gebäudes abnehmbar</li>
+                            <li>Straßenverlauf durch Vertiefungen angedeutet</li>
+                            <li>Modellierung erolgte anhand der Bauplände für das neue Gebäude sowie mithilfe einiger Drohnenaufnahmen des Gebiets</li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="images/badenbaden.png" style="width: 100%;">
+        </div>
+
+        <!-- Trennlinie -->
+        <div class="container" style="margin-top: 70px; margin-bottom: 70px;">
+            <hr>
+        </div>
+        
+        <p class="text-muted text-center">
+            Fotos werden hier nur mit Einverständnis der Auftraggebenden hochgeladen
+        </p>
 
 
          <footer class="footer mt-auto py-3 bg-light">

@@ -18,6 +18,11 @@ h2{
     transition: 1s;
 }
 
+.img:hover{
+    transform: scale(1.02);
+    transition: 1s;
+}
+
 .header{
     height: 100px;
     width: 100%;
@@ -109,6 +114,10 @@ nav .fa{
 
     .row{
         flex-direction: column;
+    }
+
+    .row.col-9{
+        width: 100% !important;
     }
 
 

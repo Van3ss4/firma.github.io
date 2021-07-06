@@ -146,6 +146,13 @@ nav .fa{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
+  a.mylink{
+      text-decoration: none;
+  }
+a.mylink:hover{
+    text-decoration: underline;
+}
+
 @media(max-width: 1000px){
     .row.doppelbild{
         flex-direction: column;

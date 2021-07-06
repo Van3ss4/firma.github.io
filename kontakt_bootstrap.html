@@ -14,120 +14,122 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <body>
+    <body class="d-flex flex-column min-vh-100">
 
         <!-- Header -->
        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <img src="images/Logo.png" width="50" height="40">
-            <span class="fs-4">Architektur 3D-Druck</span>
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="images/Logo.png" width="50" height="40">
+                <span class="fs-4">&nbsp;&nbsp;&nbsp;Architektur 3D-Druck</span>
 
-        </a>
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="index_bootstrap.html" class="nav-link link-secondary">HOME</a></li>
-            <li class="nav-item"><a href="galerie_bootstrap.html" class="nav-link link-secondary">GALERIE</a></li>
-            <li class="nav-item"><a href="kontakt_bootstrap.html" class="nav-link link-dark" aria-current="page">KONTAKT</a></li>
-        </ul>
-    </header>
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index_bootstrap.html" class="nav-link link-secondary">HOME</a></li>
+                <li class="nav-item"><a href="galerie_bootstrap.html" class="nav-link link-secondary">GALERIE</a></li>
+                <li class="nav-item"><a href="kontakt_bootstrap.html" class="nav-link link-dark" aria-current="page">KONTAKT</a></li>
+            </ul>
+        </header>
 
-<section class="mb-4">
-    <div class="container" style="margin-bottom: 300px;">
-        <h1 class="h1-responsive font-weight-bold text-center my-4">Kontakt</h1>
-        <p class="text-center w-responsive mx-auto mb-5">
-            Kontaktieren Sie uns gerne bei Fragen oder für eine unverbindliche Preisabschätzung.<br>
-            Gewöhnlich sollten Sie eine Antwort innerhalb eines Werktages erhalten.
-        </p>
-        <div class="row align-items-center">
-            <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="https://formspree.io/weiva0703@gmail.com" method="POST">
-                    <div class="row" style="margin: 3%;">
-                        <!-- Name -->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <label for="name" class="text-muted">Name</label>
-                                <input type="text" id="name" name="name" class="form-control">
+        <section class="mb-4">
+            <div class="container" style="margin-bottom: 200px;">
+                <h1 class="h1-responsive font-weight-bold text-center my-4">Kontakt</h1>
+                <p class="text-center w-responsive mx-auto mb-5">
+                    Kontaktieren Sie uns gerne bei Fragen oder für eine unverbindliche Preisabschätzung.<br>
+                    Gewöhnlich sollten Sie eine Antwort innerhalb eines Werktages erhalten.
+                </p>
+                <div class="row align-items-center">
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="https://formspree.io/weiva0703@gmail.com" method="POST">
+                            <div class="row" style="margin: 3%;">
+                                <!-- Name -->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <label for="name" class="text-muted">Name</label>
+                                        <input type="text" id="name" name="name" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- Email -->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <label for="email" class="text-muted">E-Mail-Adresse</label>
+                                        <input type="text" id="email" name="email" class="form-control">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Email -->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <label for="email" class="text-muted">E-Mail-Adresse</label>
-                                <input type="text" id="email" name="email" class="form-control">
+                            <div class="row" style="margin: 3%;">
+                                <!-- Betreff -->
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <label for="subject" class="text-muted">Betreff</label>
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row" style="margin: 3%;">
-                        <!-- Betreff -->
-                        <div class="col-md-12">
-                            <div class="md-form mb-0">
-                                <label for="subject" class="text-muted">Betreff</label>
-                                <input type="text" id="subject" name="subject" class="form-control">
+                            <div class="row" style="margin: 3%;">
+                                <!-- Ihre Nachricht -->
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <label for="message" class="text-muted">Nachricht</label>
+                                        <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row" style="margin: 3%;">
-                        <!-- Ihre Nachricht -->
-                        <div class="col-md-12">
-                            <div class="md-form">
-                                <label for="message" class="text-muted">Nachricht</label>
-                                <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>
+                            <div class="row" style="margin: 3%;">
+                                <!-- Ihre Nachricht -->
+                                <div class="col-md-12 text-center">
+                                    <input type="submit" class="btn btn-secondary" value="Absenden">
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
-                    <div class="row" style="margin: 3%;">
-                        <!-- Ihre Nachricht -->
-                        <div class="col-md-12 text-center">
-                            <input type="submit" class="btn btn-secondary" value="Absenden">
-                        </div>
-                    </div>
-                </form>
+
+                    <!-- Kontaktdaten: -->
+                    <div class="col-md-3 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <i class="bi bi-geo-alt-fill" style="font-size: 2.5rem;"></i>
+                                <p>Rheinstraße, 76185 Karlsruhe</p>
+                            </li>
+                            <li style="margin-top: 30px;">
+                                <i class="bi bi-telephone-fill" style="font-size: 2rem;"></i>
+                                <p>+49 17641162109</p>
+                            </li>
+                            <li style="margin-top: 30px; margin-bottom: 30px;">
+                                <i class="bi bi-envelope-fill" style="font-size: 2rem;"></i>
+                                <p>vw-architektur3ddruck@outlook.de</p>
+                            </li>
+                        </ul>
+                    </div>        
+                </div>
             </div>
-
-            <!-- Kontaktdaten: -->
-            <div class="col-md-3 text-center">
-                <ul class="list-unstyled mb-0">
-                    <li>
-                        <i class="bi bi-geo-alt-fill" style="font-size: 2.5rem;"></i>
-                        <p>Rheinstraße, 76185 Karlsruhe</p>
-                    </li>
-                    <li style="margin-top: 30px;">
-                        <i class="bi bi-telephone-fill" style="font-size: 2rem;"></i>
-                        <p>+49 17641162109</p>
-                    </li>
-                    <li style="margin-top: 30px; margin-bottom: 30px;">
-                        <i class="bi bi-envelope-fill" style="font-size: 2rem;"></i>
-                        <p>vw-architektur3ddruck@outlook.de</p>
-                    </li>
-                </ul>
-            </div>        
-        </div>
-    </div>
-
-</section>
+        </section>
 
 
         <!-- Fußzeile -->
-         <footer class="footer mt-auto py-3 bg-light">
+        <footer class="footer mt-auto py-3 bg-light" style="margin-bottom: 0;">
             <div class="container">
-              <span class="text-muted">
-                  <div class="row">
-                      <div class="col">
-                          Vanessa Weiß <br><br>
-                          Rheinstraße, 76185 Karlsruhe <br>
-                          vw-architektur3ddruck@outlook.de <br>
-                          +49 17641162109
-
-                      </div>
-                      <div class="col">
-                          Navigation:<br><br>
-                          <a href="index_bootstrap.html" class="text-secondary">&nbsp;&nbsp; HOME</a><br>
-                          <a href="galerie_bootstrap.html" class="text-secondary">&nbsp;&nbsp; GALERIE</a><br>
-                          <a href="kontakt_bootstrap.html" class="text-secondary">&nbsp;&nbsp; KONTAKT</a><br>
-                      </div>
-                  </div>
-                </span>
+                <div class="text-muted">
+                    <div class="row">
+                        <div class="col text-center">
+                            <p style="margin: 10px;"><b>Kontaktdaten:</b></p>
+                            <p>
+                                <i class="bi bi-person-fill"></i>&nbsp;&nbsp; Vanessa Weiß<br>
+                                <i class="bi bi-telephone-fill"></i>&nbsp;&nbsp; +49 17641162109<br>
+                                <i class="bi bi-envelope-fill"></i>&nbsp;&nbsp; vw-architektur3ddruck@outlook.de<br>
+                                <i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp; Rheinstraße, 76185 Karlsruhe
+                            </p>
+                        </div>
+                        <div class="col text-center">
+                            <p style="margin: 10px;"><b>Navigation:</b></p>
+                            <a href="index_bootstrap.html" class="text-secondary mylink">Home</a><br>
+                            <a href="galerie_bootstrap.html" class="text-secondary mylink">Galerie</a><br>
+                            <a href="kontakt_bootstrap.html" class="text-secondary mylink">Kontakt</a><br>
+                            <a href="impressum_bootstrap.html" class="text-secondary mylink">Impressum</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </footer>  
+        </footer>   
 
     </body>
 </html>

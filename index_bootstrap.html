@@ -24,20 +24,15 @@
 
             </a>
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="index_bootstrap.html" class="nav-link link-secondary" aria-current="page">HOME</a></li>
-                <li class="nav-item"><a href="galerie_bootstrap.html" class="nav-link link-dark">GALERIE</a></li>
-                <li class="nav-item"><a href="kontakt_bootstrap.html" class="nav-link link-dark">KONTAKT</a></li>
+                <li class="nav-item"><a href="index_bootstrap.html" class="nav-link link-dark" aria-current="page">HOME</a></li>
+                <li class="nav-item"><a href="galerie_bootstrap.html" class="nav-link link-secondary">GALERIE</a></li>
+                <li class="nav-item"><a href="kontakt_bootstrap.html" class="nav-link link-secondary">KONTAKT</a></li>
             </ul>
         </header>
         
         <!-- Titelbilder -->
-        <div class="row align-items-center">
-            <div class="col-lg-4">
-                <figure class="figure">
-                    <img src="images/Hnasehaus2.png" class="figure-img img-fluid rounded" style="width: 100%; max-width: 600px;">
-                </figure>
-            </div>
-            <div class="col-lg-4">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-4 text-center">
                 <figure class="figure">
                     <img src="images/Hnasehaus2.png" class="figure-img img-fluid rounded" style="width: 100%; max-width: 600px;">
                 </figure>
@@ -49,14 +44,16 @@
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
               <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light" style="margin: 4%;">Modelle, die begeistern</h1>
-                <p>
-                    Wie wirkt das neue Gebäude zwischen den Bestehenden?<br>
-                    Sollte es ein Stockwerk mehr oder weniger haben?<br>
-                    Was ist die optimale Raumaufteilung?<br><br>
-                    
-                    Diese Fragen können mit einem dreidimensionalen Modell ganz einfach geklärt werden!
-                </p>
+                  <div class="card" style="padding: 5%;">
+                    <h1 class="fw-light" style="margin: 4%;">Modelle, die begeistern</h1>
+                    <p>
+                        Wie wirkt das neue Gebäude zwischen den Bestehenden?<br>
+                        Sollte es ein Stockwerk mehr oder weniger haben?<br>
+                        Was ist die optimale Raumaufteilung?<br><br>
+                        
+                        Diese Fragen können mit einem dreidimensionalen Modell ganz einfach geklärt werden!
+                    </p>
+                  </div>
               </div>
             </div>
         </section>
@@ -65,8 +62,9 @@
         <div class="container" >
             <figure class="figure">
                 <img src="images/badenbaden.png" class="figure-img img-fluid rounded">
-                <figcaption class="figure-caption text-muted" style="text-align: center;">Städtebauliches Modell
-                    <br>(ca. 700 mm x 400 mm, Maßstab 1:200)
+                <figcaption class="figure-caption text-muted" style="text-align: center;">
+                    Städtebauliches Modell<br>
+                    (ca. 700 mm x 400 mm, Maßstab 1:200)
                 </caption>
             </figure>
         </div>
@@ -124,13 +122,25 @@
         </div>
 
         <!-- 3er Bild Innenraum -->
-        <div class="container" style="margin-top: 100px;" >
-            <figure class="figure">
-                <img src="images/Langesbild.png" class="figure-img img-fluid rounded lang">
-                <figcaption class="figure-caption text-muted" style="text-align: center;">
-                    Die einzelnen Stockwerke eines Einfamilienhauses
-                </caption>
-            </figure>
+        <div class="container-md" style="margin-top: 70px; margin-bottom: 50px;">
+            <div class="row">
+                <div class="col" style="text-align: center;">
+                    <div class="figure dreierBild">
+                        <img src="images/Hockenheim_OG2.png" class="figure-img img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col" style="text-align: center;">
+                    <div class="figure dreierBild">
+                        <img src="images/Hockenheim_OG1.png" class="figure-img img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col" style="text-align: center;" >
+                    <div class="figure dreierBild">
+                        <img src="images/Hockenheim_EG.png" class="figure-img img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+            <p class="text-muted" style="text-align: center; margin-top: 50px;">Die einzelnen Stockwerke eines Einfamilienhauses</p>
         </div>
 
         <!-- Trennlinie -->
@@ -143,7 +153,9 @@
         <div class="row album" style="margin: auto; margin-top: 70px; margin-bottom: 70px; width: 90%; text-align: center;">
             <h1 style="margin-bottom: 50px; text-align: center;">Der Herstellungsprozess</h1>
             <div class="col-lg-4">
-                <img src="images/ico_kostruktion.png" style="max-width: 60%;">
+                <div class="figure">
+                    <img src="images/ico_kostruktion.png" style="max-width: 60%;">
+                </div>
                 <h2 style="margin: 4%;">Konstruktion</h2>
                 <p>
                     Aus Grundrissplänen, Fotos oder Skizzen werden 
@@ -152,7 +164,9 @@
                 </p>
             </div>
             <div class="col-lg-4">
-                <img src="images/ico_drucken.png" style="max-width: 60%;">
+                <div class="figure">
+                    <img src="images/ico_drucken.png" style="max-width: 60%;">
+                </div>
                 <h2 style="margin: 4%;">Drucken</h2>
                 <p>
                     Schichtweise wird das Material aufgetragen, sodass nach 
@@ -161,7 +175,9 @@
                 </p>
             </div>
             <div class="col-lg-4">
-                <img src="images/ico_nachbearbeiten.png" style="max-width: 60%;">
+                <div class="figure">
+                    <img src="images/ico_nachbearbeiten.png" style="max-width: 60%;">
+                </div>
                 <h2 style="margin: 4%;">Nachbearbeiten</h2>
                 <p>
                     Für das optimale „Finish“ werden die Teile nach dem Druck 

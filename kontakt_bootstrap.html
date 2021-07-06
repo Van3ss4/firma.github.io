@@ -7,10 +7,10 @@
         <link rel="stylesheet" href="style_bootstrap.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&family=Zen+Loop&display=swap" rel="stylesheet"> 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+        <!-- Icons--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
@@ -24,116 +24,110 @@
 
         </a>
         <ul class="nav nav-pills">
-            <li class="nav-item"><a href="index_bootstrap.html" class="nav-link link-dark">HOME</a></li>
-            <li class="nav-item"><a href="galerie_bootstrap.html" class="nav-link link-dark">GALERIE</a></li>
-            <li class="nav-item"><a href="kontakt_bootstrap.html" class="nav-link link-secondary" aria-current="page">KONTAKT</a></li>
+            <li class="nav-item"><a href="index_bootstrap.html" class="nav-link link-secondary">HOME</a></li>
+            <li class="nav-item"><a href="galerie_bootstrap.html" class="nav-link link-secondary">GALERIE</a></li>
+            <li class="nav-item"><a href="kontakt_bootstrap.html" class="nav-link link-dark" aria-current="page">KONTAKT</a></li>
         </ul>
     </header>
 
-    <!--Section: Contact v.2-->
 <section class="mb-4">
-
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours to help you.</p>
-
-    <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
+    <div class="container" style="margin-bottom: 300px;">
+        <h1 class="h1-responsive font-weight-bold text-center my-4">Kontakt</h1>
+        <p class="text-center w-responsive mx-auto mb-5">
+            Kontaktieren Sie uns gerne bei Fragen oder für eine unverbindliche Preisabschätzung.<br>
+            Gewöhnlich sollten Sie eine Antwort innerhalb eines Werktages erhalten.
+        </p>
+        <div class="row align-items-center">
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="https://formspree.io/weiva0703@gmail.com" method="POST">
+                    <div class="row" style="margin: 3%;">
+                        <!-- Name -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="name" class="text-muted">Name</label>
+                                <input type="text" id="name" name="name" class="form-control">
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="email" class="text-muted">E-Mail-Adresse</label>
+                                <input type="text" id="email" name="email" class="form-control">
+                            </div>
                         </div>
                     </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
+                    <div class="row" style="margin: 3%;">
+                        <!-- Betreff -->
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <label for="subject" class="text-muted">Betreff</label>
+                                <input type="text" id="subject" name="subject" class="form-control">
+                            </div>
                         </div>
                     </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
+                    <div class="row" style="margin: 3%;">
+                        <!-- Ihre Nachricht -->
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <label for="message" class="text-muted">Nachricht</label>
+                                <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
+                    <div class="row" style="margin: 3%;">
+                        <!-- Ihre Nachricht -->
+                        <div class="col-md-12 text-center">
+                            <input type="submit" class="btn btn-secondary" value="Absenden">
                         </div>
-
                     </div>
-                </div>
-                <!--Grid row-->
-
-            </form>
-
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </form>
             </div>
-            <div class="status"></div>
+
+            <!-- Kontaktdaten: -->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <i class="bi bi-geo-alt-fill" style="font-size: 2.5rem;"></i>
+                        <p>Rheinstraße, 76185 Karlsruhe</p>
+                    </li>
+                    <li style="margin-top: 30px;">
+                        <i class="bi bi-telephone-fill" style="font-size: 2rem;"></i>
+                        <p>+49 17641162109</p>
+                    </li>
+                    <li style="margin-top: 30px; margin-bottom: 30px;">
+                        <i class="bi bi-envelope-fill" style="font-size: 2rem;"></i>
+                        <p>vw-architektur3ddruck@outlook.de</p>
+                    </li>
+                </ul>
+            </div>        
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>San Francisco, CA 94126, USA</p>
-                </li>
-
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 01 234 567 89</p>
-                </li>
-
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>contact@mdbootstrap.com</p>
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
     </div>
 
 </section>
 
+
+        <!-- Fußzeile -->
          <footer class="footer mt-auto py-3 bg-light">
             <div class="container">
-              <span class="text-muted">Vanessa Weiß</span>
+              <span class="text-muted">
+                  <div class="row">
+                      <div class="col">
+                          Vanessa Weiß <br><br>
+                          Rheinstraße, 76185 Karlsruhe <br>
+                          vw-architektur3ddruck@outlook.de <br>
+                          +49 17641162109
+
+                      </div>
+                      <div class="col">
+                          Navigation:<br><br>
+                          <a href="index_bootstrap.html" class="text-secondary">&nbsp;&nbsp; HOME</a><br>
+                          <a href="galerie_bootstrap.html" class="text-secondary">&nbsp;&nbsp; GALERIE</a><br>
+                          <a href="kontakt_bootstrap.html" class="text-secondary">&nbsp;&nbsp; KONTAKT</a><br>
+                      </div>
+                  </div>
+                </span>
             </div>
           </footer>  
 
-        
     </body>
-
-    
 </html>

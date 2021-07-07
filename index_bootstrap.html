@@ -17,7 +17,7 @@
     <body>
 
         <!-- Header -->
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" style="position: sticky;">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                 <img src="images/Logo.png" width="50" height="40">
                 <span class="fs-4">&nbsp;&nbsp;&nbsp;Architektur 3D-Druck</span>
@@ -29,15 +29,50 @@
                 <li class="nav-item"><a href="kontakt_bootstrap.html" class="nav-link link-secondary">KONTAKT</a></li>
             </ul>
         </header>
-        
-        <!-- Titelbilder -->
+
+       
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-block w-100">    
+                        <div class="row justify-content-center mybackground" style="background-image: url(images/badenbaden.png);">
+                            <div class="col-lg-12 text-center myoverlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100">
+                        <div class="row justify-content-center mybackground" style="background-image: url(images/Hansehaus2bilder.png);">
+                            <div class="col-lg-12 text-center myoverlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100">
+                        <div class="row justify-content-center mybackground" style="background-image: url(images/haus_nah2\ -\ Kopie.png); ">
+                            <div class="col-lg-12 text-center myoverlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <!-- Titelbilder
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-4 text-center">
                 <figure class="figure">
                     <img src="images/Hnasehaus2.png" class="figure-img img-fluid rounded" style="width: 100%; max-width: 600px;">
                 </figure>
             </div>
-        </div>
+        </div> -->
         
 
         <!-- Beschreibung -->
@@ -58,7 +93,7 @@
             </div>
         </section>
 
-        <!-- Bild Baden-Baden -->
+        <!-- Bild Baden-Baden
         <div class="container" >
             <figure class="figure">
                 <img src="images/badenbaden.png" class="figure-img img-fluid rounded">
@@ -67,7 +102,7 @@
                     (ca. 700 mm x 400 mm, Maßstab 1:200)
                 </caption>
             </figure>
-        </div>
+        </div> -->
 
         <!-- Trennlinie -->
         <div class="container" style="margin-top: 70px; margin-bottom: 70px;">

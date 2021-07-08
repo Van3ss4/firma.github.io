@@ -24,6 +24,18 @@ hr{
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.row{
+    --bs-gutter-x: 0rem !important;
+}
+
+.list-left{
+    text-align: right;
+}
+
+.list-right, h3{
+    text-align: left;
+}
+
 
 
 .figure:hover{
@@ -153,7 +165,50 @@ a.mylink:hover{
     text-decoration: underline;
 }
 
+.rowImpressum{
+    margin: 2%;
+}
+
+.obererEyecatcher{
+    background-image: url(images/Hnasehaus1.png);
+    background-size: 100% auto;
+}
+
+.untererEyecatcher{
+    background-size: 100% auto;
+}
+
+.eyecatcher{
+    height: 60vh;
+}
+
 @media(max-width: 1000px){
+
+    h1{
+        font-size: 28px !important;
+    }
+
+    .card h1, h3{
+        text-align: center;
+    }
+
+    h5{
+        font-size: 18px !important;
+        text-align: center;
+    }
+
+    .untererEyecatcher{
+        background-size: auto 100%;
+    }
+
+    .eyecatcher{
+        height: 80vh;
+    }
+
+    .obererEyecatcher.card{
+        margin-top: 3vh;
+    }
+
     .row.doppelbild{
         flex-direction: column;
     }
@@ -172,9 +227,26 @@ a.mylink:hover{
         text-align: center;
     }
 
+    .list-left, .list-right{
+        text-align: center;
+    }
+
+    .rowImpressum{
+        margin: 5%;
+    }
+
+    .card{
+        margin-top: 10vh;
+    }
+
+    .obererEyecatcher{
+        background-image: none;
+    }
 
 
 }
+
+
 
 .mybackground{
     background-size: auto 60vh; 

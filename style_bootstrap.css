@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-
 }
 
 h1{
     font-size: 34px !important;
+    font-family: var(--bs-font-sans-serif);
 }
 
 .h1:focus{
@@ -188,6 +188,12 @@ a.mylink:hover{
         font-size: 28px !important;
     }
 
+    .galerie_badenbaden{
+        height: 90vw;
+        transform: translatex(calc(50vw - 49%)) translatey(calc(50vh - 5%)) rotate(90deg);
+        margin-bottom: 100vh;
+    }
+
     .card h1, h3{
         text-align: center;
     }
@@ -202,7 +208,7 @@ a.mylink:hover{
     }
 
     .eyecatcher{
-        height: 80vh;
+        height: 100vh;
     }
 
     .obererEyecatcher.card{
